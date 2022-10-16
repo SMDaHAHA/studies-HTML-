@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Тестовая страница">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="css/mail.css">
+</head>
+<body>
+  <!--Ввод текст-->
+<input type="text"
+placeholder="Введите текст">
+<button>Готово</button>
+
+<!--Комментарий-->
+
+
+<!--Заголовки(Разные)-->
+<h1>Заголовок 1</h1>
+<h2>Заголовок 2</h2>
+<h3>Заголовок 3</h3>
+<h4>Заголовок 4</h4>
+<h5>Заголовок 5</h5>
+<h6>Заголовок 6</h6>
+
+<!--Тест(+доп атрибуты)-->
+
+<p><b>Просто текст</b></p>
+<p><strong>Просто текст</strong></p>
+<p><i>Просто текст</i></p>
+<p><em>Просто текст<em></p>
+
+<!--Верхний индекс и нижний индекс-->
+
+<p>H<sub>2</sub>O</p>
+<p>5<sup>2</sup></p>
+
+Просто текст<br>Просто 123<br>
+<p>Просто текст</p>
+
+<!--Линия на всю страницу после текста-->
+<hr>
+<p>Просто текст</p><hr>
+
+<!--Аббревиатура-->
+
+<abbr>HTML</abbr>
+<abbr title="Язык разметок">HTML</abbr>
+
+<!--Адресс-->
+
+<address>Seatle, USA</address>
+
+<!--Текст с сохранением разметки-->
+
+<pre>funcion some() {
+  return "Some"
+}
+</pre>
+
+<!--Фрагмент кода-->
+
+<code> let x = 0; </code>
+
+<!--Списки-->
+
+<ol start="3" type="a">
+  <li>Купи молоко</li>
+  <li>Купи картошку</li>
+  <li>Купи машину</li>
+  <li></li>
+  <li></li>
+  <li></li>
+
+</ol>
+
+<ul type="cyrcle">
+  <li>Купи молоко</li>
+  <li>Купи картошку</li>
+  <li>Купи машину</li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<!--Атрибуты-->
+
+<p title="Some txt">text</p>
+
+<!--Создание ссылок-->
+
+<a href="#bottomOfPage">Вниз</a>
+
+<a href="https://google.com" title="Нажми на меня" target="_self">Перейти в гугл</a> <!--Откроется в этом же окне-->
+<a href="https://google.com" title="Нажми на меня" target="_blank">Перейти в гугл</a> <!--Откроется в новом окне-->
+
+<!--Добавим HTML файл,переход на него-->
+<a href="/about.html" title="Переход на новую страницу">Переход на 2-ю страницу</a>
+
+<!--Ссылка якорь-->
+
+<a name="bottomOfPage">Вниз</a>
+
+<!--Ссылка на почтовый клиент-->
+
+<a href="mailto:steam.com6824@mail.ru">Написать нам на почту!</a>
+
+<!--Изображения-->
+<hr>
+<p></p>
+
+<img src="https://media.ceetiz.com/activity/ALPDXB028/thumbnails/642x450/predator.jpg" width="100%" title="Навели на меня" alt="Карусель наркоманов"> <!--width="500px" ++ height="200px" ++ height="auto"-->
+
+<img src="jpg/boobs.jpg" title="boobs" alt="Сиськи" width="auto" height="auto">
+
+<!--Таблица-->
+<hr>
+  <table border="1" width="500px"><!--or only <tr></tr>-->
+    <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+      <tr>
+        <td>Jonh1</td>
+        <td>Dale</td>
+      </tr><tr>
+        <td>Jonh2</td>
+        <td>Dale</td>
+      </tr>
+      <tr>
+        <td>Jonh3</td>
+        <td>Dale</td>
+      </tr>
+      <tr>
+        <td>Jonh4</td>
+        <td>Dale</td>
+      </tr> 
+    </tbody>
+    <tfoot>
+        <tr>
+          <td>Last</td>
+          <td>One</td>
+        </tr>
+    </tfoot>
+  </table>
+
+<!--Тег <link> в хед-->
+
+<link rel="stylesheet" href="css/mail.css">
+
+<!--Тег <script> в теге боди-->
+
+<script src="js/main.js">
+</script>
+
+<!--Тег <div> и Тег <span>-->
+
+  <div>Просто текст</div>
+  <div>Просто текст</div>
+  <div>Просто <span>текст</span></div>
+
+  <p></p>
+
+  <span>Просто текст</span>
+  <span>Просто текст</span>
+
+<!--Формы для создания ввода-->
+
+<form action="" method="post">
+
+<label for="user_name">Введите имя</label>
+<input type="text"
+placeholder="Введите имя"
+value="Что-то"
+maxlength="5"
+name="user_name"
+id="user_name">
+<!--id делает все тоже самое что и name-->
+<!--С помощью name задается имя для создания функционала-->
+<!--Есть атрибут hidden который прячет поле ввода
+атрибут disabled делает поле неактивным
+атрибут readonly только считывать состояние-->
+<button>Готово</button>
+<br></br>
+
+<!--Форматы полей ввода-->
+<label>Введите пароль</label>
+<input type="password">
+<button>Готово</button>
+<br></br>
+
+<label>Введите почту</label>
+<input type="email">
+<button>Готово</button>
+<br></br>
+
+<label>Цвет</label>
+<input type="color">
+<button>Готово</button>
+<br></br>
+
+<Label>Дата</Label>
+<input type="date">
+<button>Готово</button>
+<br></br>
+
+<Label>Время</Label>
+<input type="time">
+<button>Готово</button>
+<br></br>
+
+<Label>Дата и время</Label>
+<input type="datetime">
+<button>Готово</button>
+<br></br>
+
+<label>Checkbox</label>
+<input type="checkbox">
+<br></br>
+
+<label>Radio</label>
+<input type="radio">
+<br></br>
+
+
+<input type="radio" name="state">
+<input type="radio" name="state">
+<br></br>
+
+<label>Файл</label>
+<input type="file">
+<br></br>
+
+<label>search</label>
+<input type="search">
+<br></br>
+
+<label>button</label>
+<input type="button"
+value="Кнопка">
+<br></br>
+
+<label>submit</label>
+<input type="submit"
+value="отправить">
+<br></br>
+
+<label>reset</label>
+<input type="reset" value="Очистить">
+<br></br>
+<!--Очищает все поля-->
+</form>
+
+<!--Поле для создания текста(большое кол во текста)-->
+<br></br>
+<form action="" method="post">
+  <!--hidden readonly required(обязательно ввести данные)-->
+  <textarea placeholder="Введите текст"
+  maxlength="150"
+  name="bigtext"
+  id="bigtext">Просто текст</textarea>
+  <br></br>
+<!--Создание кнопок-->
+<button type="reset">Очистить текст</button>
+
+</form>
+<br></br>
+
+<!--Селекторы выбора-->
+
+<form>
+  <select>
+    <option>BMW</option>
+    <option selected>AUDI</option>
+    <option>Mersedess</option>
+    <option disabled>-----</option>
+  </select> <!--Или disabled selected-->
+
+<br></br>
+
+  <select multiple>
+    <option>BMW</option>
+    <option>AUDI</option>
+    <option>Mersedess</option>
+    <option disabled selected>-----</option>
+  </select>
+
+  <br></br>
+
+  <select multiple size="2"> <!--Можно выбирать много selected-->
+    <option>BMW</option>
+    <option selected>AUDI</option>
+    <option selected>Mersedess</option>
+    <option disabled>-----</option>
+  </select>
+</form>
+
+<!--Специальные HTML теги-->
+<!--Шапка сайта-->
+<header>
+  Шапка
+</header>
+
+<!--Основная часть сайта-->
+<main>
+  Основная часть сайта
+</main>
+
+<!--Боковая часть сайта-->
+<aside>
+  Боковая часть сайта
+</aside>
+
+<!--Подвал сайта-->
+<footer>
+  Подвал сайта
+</footer>
+
+<progress max="100" value="85">Загружено на 85%</progress>
+<details>
+  <summary>Подробнее</summary>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere temporibus totam aliquid ut sit aliquam accusantium nulla harum atque facilis libero, ipsum iure perferendis et tempora. Animi necessitatibus ad atque.
+</details>
+</body>
+</html>
