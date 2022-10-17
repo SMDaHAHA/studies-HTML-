@@ -1,3 +1,23 @@
-body {
+.start {
   color: brown;
+}
+
+.main-text {
+  color:rgb(143, 39, 184);
+}
+
+#text-in {
+  color:darkblue;
+}
+
+#em {
+  color:gold;
+}
+
+#bold {
+  color:red;
+}
+
+div p b, div p i {
+  color: green;
 }
